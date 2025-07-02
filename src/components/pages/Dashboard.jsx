@@ -38,11 +38,11 @@ export default function Dashboard() {
         }
     }
     return (
-        <div className="flex">
+        <div className="flex md:justify-center items-center md:items-start">
             {/* Main Content */}
-            <div className="w-[75%] text-white px-16 py-10">
+            <div className="md:w-[75%] text-white px-16 py-10 w-full">
                 <h1 className="text-3xl font-bold">Explore</h1>
-                <div>
+                <div className="flex flex-col justify-center items-center">
                     {posts.map((post) => (
                         <PostCard
                             key={post.id}
@@ -56,7 +56,7 @@ export default function Dashboard() {
             </div>
 
             {/* Fixed Sidebar */}
-            <div className="w-[25%]">
+            <div className="w-[25%] md:flex hidden">
                 {/* className="fixed overflow-auto right-0 top-20 w-[25%] h-full p-4" */}
                 <Sidebar />
             </div>
