@@ -5,7 +5,7 @@ import LeaderBoradCard from "../LeaderboradCard";
 
 export default function Sidebar() {
     return (
-        <div className="text-white p-4">
+        <div className="text-white p-4 ">
             <div className="profile flex justify-center items-center flex-col gap-2">
                 <div className="h-25 w-25 rounded-full">
                     <img src="Images/user.jpg" alt="user image" className="h-[100%] w-[100%] object-cover rounded-full" />
@@ -44,7 +44,7 @@ export default function Sidebar() {
                 </ul>
             </div>
             <div className="my-10">
-                <h1 className="text-3xl font-bold my-3">Top Skills</h1>
+                <h1 className="text-3xl font-bold my-6">Top Skills</h1>
                 <ul className="flex flex-wrap gap-4 ">
                     {topSkills.map((skill, index) => (
                         <li key={index} className="bg-gray-600 rounded-full px-4 py-2 hover:bg-gray-800 transition-all duration-300 cursor-pointer">{skill}</li>
