@@ -21,9 +21,10 @@ https://skill-showcase-red.vercel.app/
 - Fully responsive layout
 
 ## Screenshots
-![Main Feed](screenshots/feed.png)
-![Sidebar](screenshots/sidebar.png)
-![Mobile View](screenshots/mobile.png)
+![dashboard](https://github.com/user-attachments/assets/f245fa70-4647-4138-be04-2c29981166ad)
+![profile](https://github.com/user-attachments/assets/f049b1c5-fb17-4b6b-a190-aa157c09568a)
+![mobileDashboard](https://github.com/user-attachments/assets/3b44ac53-495f-4e45-ac92-4449468ddcd8)
+
 
 ## Setup & Deployment
 ```bash
