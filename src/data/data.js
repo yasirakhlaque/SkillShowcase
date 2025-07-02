@@ -72,11 +72,11 @@ export const posts = [
 ]
 
 export const leaderboard = [
-  { name: "Alex Chen", points: 2840, avatar: "/placeholder.svg?height=32&width=32" },
-  { name: "Sarah Johnson", points: 2650, avatar: "/placeholder.svg?height=32&width=32" },
-  { name: "Mike Rodriguez", points: 2420, avatar: "/placeholder.svg?height=32&width=32" },
-  { name: "Emily Watson", points: 2180, avatar: "/placeholder.svg?height=32&width=32" },
-  { name: "David Kim", points: 1950, avatar: "/placeholder.svg?height=32&width=32" },
+  { name: "Alex Chen", points: 2840, avatar: "Images/image1.png" },
+  { name: "Sarah Johnson", points: 2650, avatar: "Images/image2.png" },
+  { name: "Mike Rodriguez", points: 2420, avatar: "Images/image3.png" },
+  { name: "Emiy Watson", points: 2180, avatar: "Images/image4.png" },
+  { name: "Jhon Doe", points: 1950, avatar: "Images/user.jpg" },
 ]
 
 export const topProjects = [
