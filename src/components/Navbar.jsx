@@ -41,24 +41,20 @@ export default function Navbar() {
             {/* Mobile Navigation Bar */}
             <nav className="md:hidden text-white p-4">
                 <div className="flex justify-between items-center p-2 text-white border-1 rounded-lg border-gray-700 relative z-20">
-                    <button
-                        className="text-2xl font-semibold text-white p-2 transition-transform duration-300 ease-in-out hover:scale-110"
-                        onClick={() => setMobileNavigation(!mobileNavigation)}
-                    >
+                    <button className="text-2xl font-semibold text-white p-2 transition-transform duration-300 ease-in-out hover:scale-110"
+                        onClick={() => setMobileNavigation(!mobileNavigation)}>
                         <div className={`flex justify-center gap-4 transition-transform duration-300 ease-in-out ${mobileNavigation ? 'rotate-90' : ''}`}>
-                            {mobileNavigation ? <button className="text-4xl rotate-45">+</button> : <button className="rotate-90">|||</button>}
+                            {mobileNavigation ? <h1 className="text-4xl rotate-45">+</h1> : <h1 className="rotate-90">|||</h1>}
                         </div>
                     </button>
                     <div className="h-10 w-10 rounded-full">
-                        <img src="Images/user.jpg" alt="user image" className="h-[100%] w-[100%] object-cover rounded-full" />
+                       <Link to={"/profile"}><img src="Images/user.jpg" alt="user image" className="h-[100%] w-[100%] object-cover rounded-full" /></Link>
                     </div>
                 </div>
 
                 {/* Mobile Overlay Menu */}
                 <div className={`fixed inset-0 bg-gray-900 z-10 flex justify-center items-center flex-col gap-8 transition-all duration-500 ease-in-out ${mobileNavigation ? 'translate-x-0 opacity-100 visible' : '-translate-x-full opacity-0 invisible'
                     }`}>
-
-
                     {/* Navigation Links */}
                     <div className="flex flex-col justify-center items-center gap-8">
                         <ul className="flex justify-center items-center flex-col gap-8 font-semibold text-xl">
@@ -72,7 +68,7 @@ export default function Navbar() {
                                     style={{ transitionDelay: `${index * 100}ms` }}
                                 >
                                     <Link
-                                        href={option.link}
+                                        to={option.link}
                                         onClick={() => setMobileNavigation(false)}
                                         className="hover:text-blue-400 transition-colors duration-300"
                                     >

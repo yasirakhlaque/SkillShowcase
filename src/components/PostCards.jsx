@@ -15,7 +15,7 @@ export default function PostCard({ title, description, tags, likes, comments, ti
 
 
     return (
-        <div className="border-1 border-gray-700 rounded-xl text-white my-10 md:w-fit w-[95vw]">
+        <div className="border-1 border-gray-700 rounded-xl text-white my-10 md:w-200 w-[95vw]">
             {/* Headers */}
             <header className="flex items-center md:justify-between justify-center p-4 flex-wrap">
                 <div className="flex gap-4 flex-wrap md:justify-start justify-center">
@@ -23,7 +23,7 @@ export default function PostCard({ title, description, tags, likes, comments, ti
                         <img src={avatar} alt={name} className="h-[100%] w-[100%] object-cover rounded-full" />
                     </div>
                     <div className="md:text-left text-center">
-                        <h2 className="font-semibold">{name}</h2>
+                        <h2 className="font-semibold hover:text-blue-600 transition-all duration-300 cursor-pointer">{name}</h2>
                         <h4 className="flex items-center gap-4 text-[.8em] text-gray-400">{username} . {timeAgo}</h4>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ export default function PostCard({ title, description, tags, likes, comments, ti
                     <h1 className="font-bold md:text-2xl text-[.9rem]">{title}</h1>
                     <p className="text-gray-300 md:text-[.9em] text-[.6rem]">{description}</p>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex md:justify-start justify-center">
                     <button className="md:w-40 md:h-10 rounded-lg bg-blue-950 font-semibold hover:bg-blue-800 transition-all duration-300 cursor-pointer w-fit h-fit md:p-3 p-2 md:text-[1rem] flex justify-center items-center text-[.8rem] ">{linkText}</button>
                 </div>
                 {/* Tags */}
