@@ -1,12 +1,32 @@
-# React + Vite
+# SkillShowcase Explore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+A skill-based social feed to showcase user achievements (projects, internships, certifications) built with React + Tailwind + static JSON.
 
-Currently, two official plugins are available:
+## Live Demo
+https://skill-showcase-red.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React 
+- Tailwind CSS
+- Vercel 
+- Dummy JSON for data
 
-## Expanding the ESLint configuration
+## Key Features
+- Post types: Project, Certification, Coding Rank, Research Paper, Internship  
+- Interactive icons: Like, Comment, Save (UI only)  
+- Skill tags on each post  
+- Sidebar includes User Dashboard, Leaderboard, Top Projects, Top Skills  
+- Sort/filter UI controls (Recent, Most Liked, By Category)  
+- Fully responsive layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshots
+![Main Feed](screenshots/feed.png)
+![Sidebar](screenshots/sidebar.png)
+![Mobile View](screenshots/mobile.png)
+
+## Setup & Deployment
+```bash
+git clone ...
+npm install
+npm run dev   # localhost:5173
